@@ -1,0 +1,2 @@
+/var/lib/php5$ VarDir
+/var/lib/php5/sess_[0-9a-z]{32}$ VarFile+ANF+ARF

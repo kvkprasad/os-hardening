@@ -1,0 +1,2 @@
+/var/lib/dlocate/(dpkg-list|dlocatedb(|\.stamps|\.old))$ VarFile
+/var/lib/dlocate$ VarDir

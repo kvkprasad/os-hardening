@@ -1,0 +1,19 @@
+#!/bin/sh
+
+escapere()
+{
+  sed 's/\./\\./g'
+}
+
+if [ -n "$(hostname --fqdn)" ]; then 
+  echo "@@define FQDN $(hostname --fqdn | escapere)"
+fi
+if [ -n "$(hostname)" ]; then
+  echo "@@define HOSTNAME $(hostname | escapere)"
+fi
+if [ -n "$(dnsdomainname)" ]; then
+  echo "@@define DNSDOMAINNAME $(dnsdomainname | escapere)"
+fi
+if [ -n "$(dpkg --print-architecture)" ]; then
+  echo "@@define ARCH $(dpkg --print-architecture)"
+fi

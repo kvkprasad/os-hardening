@@ -1,0 +1,3 @@
+@@define INTERFACES eth0
+/@@{RUN}/dhclient\.@@{INTERFACES}\.pid$ VarFile
+/var/lib/dhcp(3|)/dhclient\.@@{INTERFACES}\.leases$ VarFile

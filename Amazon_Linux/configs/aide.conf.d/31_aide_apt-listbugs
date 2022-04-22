@@ -1,0 +1,4 @@
+##+# this needs to go in the package
+!/var/cache/apt-listbugs/%2Findices%2Findex.db-(critical|grave|serious)\.gz$
+#!/var/cache/apt-listbugs/%2F~taru%2Fapt-listbugs%2Fdb-h%2F[0-9]{2}%2F[0-9]{6}\.status$
+/var/cache/apt-listbugs$ VarDir
